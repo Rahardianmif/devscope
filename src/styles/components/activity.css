@@ -1,0 +1,23 @@
+.activity-item{
+
+    padding:16px 0;
+
+    border-bottom:1px solid
+    var(--border);
+}
+
+.activity-item:last-child{
+    border-bottom:none;
+}
+
+.activity-type{
+    font-weight:600;
+}
+
+.activity-repo{
+    color:var(--secondary);
+
+    font-size:14px;
+
+    margin-top:4px;
+}

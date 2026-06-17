@@ -1,0 +1,84 @@
+.skeleton-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+}
+
+.skeleton-profile{
+    width:100%;
+    height:280px;
+
+    border-radius:24px;
+
+    background:#e5e7eb;
+
+    animation:pulse 1.5s infinite;
+}
+
+.skeleton-stats{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+}
+
+.skeleton-stat{
+    height:140px;
+
+    border-radius:24px;
+
+    background:#e5e7eb;
+
+    animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        opacity:.6;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.6;
+    }
+
+}
+
+.skeleton-card{
+
+    background:#e5e7eb;
+
+    border-radius:24px;
+
+    animation:pulse 1.5s infinite;
+}
+
+.skeleton-profile{
+    height:260px;
+}
+
+.skeleton-stat{
+    height:120px;
+}
+
+@keyframes pulse{
+
+    0%{
+        opacity:.5;
+    }
+
+    50%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:.5;
+    }
+
+}

@@ -1,0 +1,100 @@
+.top-repo-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid
+    var(--border);
+}
+
+.top-repo-item:last-child{
+    border-bottom:none;
+}
+
+.top-repo-item h6{
+    margin:0;
+}
+
+.top-repo-item small{
+    color:var(--secondary);
+}
+
+.repo-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:16px;
+
+    margin-bottom:20px;
+}
+
+.repo-search{
+
+    flex:1;
+
+    height:48px;
+
+    border:1px solid
+    var(--border);
+
+    border-radius:14px;
+
+    padding:0 16px;
+}
+
+.repo-sort{
+
+    width:180px;
+
+    border:1px solid
+    var(--border);
+
+    border-radius:14px;
+
+    padding:0 16px;
+}
+
+.repo-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.repo-table th{
+
+    text-align:left;
+
+    padding:16px;
+
+    border-bottom:1px solid
+    var(--border);
+}
+
+.repo-table td{
+
+    padding:16px;
+
+    border-bottom:1px solid
+    var(--border);
+}
+
+.repo-link{
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-weight:600;
+}
+
+.table-responsive{
+    overflow-x:auto;
+}
