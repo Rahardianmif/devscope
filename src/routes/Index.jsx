@@ -1,16 +1,65 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home/Home";
-import Dashboard from "../pages/Dashboard/Dashboard";
-import Compare from "../pages/Compare/Compare";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+import {
+  lazy,
+  Suspense,
+} from "react";
+
+import Skeleton from "../components/common/Skeleton";
+
+const Home = lazy(() =>
+  import("../pages/Home/Home")
+);
+
+const Dashboard = lazy(() =>
+  import(
+    "../pages/Dashboard/Dashboard"
+  )
+);
+
+const Compare = lazy(() =>
+  import(
+    "../pages/Compare/Compare"
+  )
+);
 
 function AppRoutes() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/dashboard/:username" element={<Dashboard />} />
-        <Route path="/compare" element={<Compare />} />
-      </Routes>
+
+      <Suspense
+        fallback={
+          <div className="container py-5">
+            <Skeleton />
+          </div>
+        }
+      >
+
+        <Routes>
+
+          <Route
+            path="/"
+            element={<Home />}
+          />
+
+          <Route
+            path="/dashboard/:username"
+            element={<Dashboard />}
+          />
+
+          <Route
+            path="/compare"
+            element={<Compare />}
+          />
+
+        </Routes>
+
+      </Suspense>
+
     </BrowserRouter>
   );
 }

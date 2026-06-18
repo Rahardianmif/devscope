@@ -1,0 +1,22 @@
+.export-btn{
+
+    height:48px;
+
+    padding:0 20px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+.export-btn:hover{
+    opacity:.9;
+}

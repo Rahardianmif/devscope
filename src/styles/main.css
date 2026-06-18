@@ -10,3 +10,106 @@
 @import "./components/header.css";
 @import "./components/error.css";
 @import "./components/empty.css";
+@import "./components/export.css";
+@import "./components/compare.css";
+@import "./components/analytic.css";
+
+
+.theme-light{
+    background:#f8fafc;
+    min-height:100vh;
+}
+
+.theme-dark{
+    background:#0f172a;
+    min-height:100vh;
+    color:#e2e8f0;
+}
+
+.theme-dark .dashboard-card{
+    background:#1e293b;
+    border-color:#334155;
+}
+
+.theme-dark .repo-table{
+    color:#e2e8f0;
+}
+
+.theme-dark input,
+.theme-dark select{
+    background:#1e293b;
+    color:#fff;
+    border-color:#334155;
+}
+
+.theme-toggle{
+    border:none;
+    border-radius:10px;
+    padding:10px 16px;
+    cursor:pointer;
+}
+
+.app-theme{
+    min-height:100vh;
+    transition:
+        background .3s ease,
+        color .3s ease;
+}
+
+.theme-light{
+    background:#f8fafc;
+    color:#0f172a;
+}
+
+.theme-dark{
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+.theme-dark .dashboard-card{
+    background:#1e293b;
+    border-color:#334155;
+    color:#e2e8f0;
+}
+
+.theme-dark .section-title{
+    color:#f8fafc;
+}
+
+.theme-dark .repo-table{
+    color:#e2e8f0;
+}
+
+.theme-dark .repo-table th{
+    background:#0f172a;
+}
+
+.theme-dark .repo-table td{
+    border-color:#334155;
+}
+
+.theme-dark input,
+.theme-dark select{
+    background:#1e293b;
+    color:#ffffff;
+    border-color:#334155;
+}
+
+.theme-toggle{
+    background:#0f172a;
+    color:#ffffff;
+    border:none;
+    border-radius:12px;
+    padding:12px 18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.theme-toggle:hover{
+    opacity:.9;
+}
+
+.theme-dark .theme-toggle{
+    background:#334155;
+}
