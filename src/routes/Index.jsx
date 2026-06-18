@@ -23,7 +23,7 @@ const Dashboard = lazy(() =>
 
 const Compare = lazy(() =>
   import(
-    "../pages/Compare/Compare"
+    "../pages/compare/Compare"
   )
 );
 
