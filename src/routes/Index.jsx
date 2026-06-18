@@ -33,7 +33,7 @@ function AppRoutes() {
 
       <Suspense
         fallback={
-          <div className="container py-5">
+          <div className="containe  r py-5">
             <Skeleton />
           </div>
         }
